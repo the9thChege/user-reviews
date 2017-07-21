@@ -49,7 +49,7 @@
 body {
   margin-top: 60px;
   color: #b63428;
-  background: linear-gradient(67deg, #103866, #000000, #632525);
+  background: linear-gradient(67deg, #431244, #000000, #714503);
   background-size: 600% 600%;
   -webkit-animation: BackgroundShimmer 30s ease infinite;
   -moz-animation: BackgroundShimmer 30s ease infinite;
@@ -88,7 +88,7 @@ body a:hover {
   color: red;
 }
 
-.userProductImage img, .productImage img {
+.userProductImage img{
   width: 350px;
   height: 400px;
 }
@@ -154,7 +154,7 @@ body a:hover {
 
 .headerText2 {
   margin-top: 50px;
-  background: linear-gradient(67deg, #103866, #000000, #632525);
+  background: linear-gradient(67deg, #431244, #000000, #714503);
   text-indent: 60px;
   opacity: 1;
 }
@@ -176,4 +176,18 @@ body a:hover {
 
 .fa-shopping-cart {
   color: gold;
+}
+
+.productImage img{
+  width: 100px;
+  height: 120px;
+}
+
+.starRating{
+  margin: auto;
+}
+
+.reviewForm{
+  background-color: #055208;
+  text-align: center;
 }

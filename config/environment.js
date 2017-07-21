@@ -19,10 +19,10 @@ module.exports = function(environment) {
     },
 
     firebase: {
-      apiKey: "AIzaSyALeFAnrYZ8WXM4psHKT5Ffh_ZLAdmzkS0",
-      authDomain: "review-site-fbbbc.firebaseapp.com",
-      databaseURL: "https://review-site-fbbbc.firebaseio.com",
-      storageBucket: "review-site-fbbbc.appspot.com",
+      apiKey: "AIzaSyDUCB-Ptn9-tdQTz40Svu4WzaZBXlBwf1E",
+      authDomain: "user-review-site.firebaseapp.com",
+      databaseURL: "https://user-review-site.firebaseio.com",
+      storageBucket: "user-review-site.appspot.com",
     },
 
     APP: {
