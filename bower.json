@@ -1,0 +1,22 @@
+{
+  "name": "review-site",
+  "description": "A User Reviews Site",
+  "main": "",
+  "authors": [
+    "Chege <chegekformal@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ember-qunit-notifications": "^0.1.0",
+    "firebase": "^4.1.3",
+    "moment": "^2.18.1"
+  }
+}

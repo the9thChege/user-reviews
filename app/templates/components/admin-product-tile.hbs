@@ -1,0 +1,18 @@
+<div class="categoryProductList">
+  {{#each category.products as |product|}}
+    <div class="categoryProductItem">
+
+      <div class="productImage">
+        {{product.image}}
+      </div>
+      <div class="categoryProductContent">
+
+        <h4>{{product.name}} | {{product.seller}} -- ${{product.price}}</h4>
+        <div class="productBtns">
+          {{edit-product product=product editProduct="editProduct"}}
+          <button {{action 'delete' product}}>Delete Product</button>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>

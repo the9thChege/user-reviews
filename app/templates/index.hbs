@@ -1,0 +1,18 @@
+<div class="header">
+  <div class="headerText">
+    <div class="headerText2">
+      <h1>Sharp Sharp</h1>
+      <p class="lead">Everything sharp...</p>
+    </div>
+  </div>
+</div>
+
+<div class="categoryList">
+  <center>
+    <div class="categoryListChild">
+      {{#each model as |category|}}
+        {{#link-to 'category' category.id}}{{category-tile category=category}}{{/link-to}}
+      {{/each}}
+    </div>
+  </center>
+</div>

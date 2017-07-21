@@ -1,0 +1,19 @@
+<div class="usercategoryProductList">
+  {{#each category.products as |product|}}
+    {{#link-to 'product-details' product.id}}
+      <div class="userProductItem">
+
+        <div class="userProductImage">
+          <img src= {{product.image}}>
+        </div>
+
+        <div class="userProductContent">
+          <h4 class="userproductName">{{product.name}}</h4>
+          <p class="userSeller">By {{product.seller}}</p>
+          <h3 class="userPrice">${{product.price}}</h3>
+        </div>
+
+      </div>
+    {{/link-to}}
+  {{/each}}
+</div>

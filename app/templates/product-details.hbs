@@ -1,0 +1,16 @@
+<div class="productImage">
+  <img src= {{model.image}}>
+</div>
+
+<h2>{{model.name}} <span class="price">${{model.price}}</span></h2>
+<h4>By {{model.seller}}</h4>
+
+<p>{{model.description}}</p>
+
+<div class="reviewList">
+  <h3>Reviews</h3> {{new-review saveReview="saveReview" product=model}}
+
+  {{#each model.reviews as |review|}}
+    {{review-tile review=review}}
+  {{/each}}
+</div>
