@@ -189,5 +189,14 @@ body a:hover {
 
 .reviewForm{
   background-color: #055208;
+  color: black;
   text-align: center;
+}
+
+.fa-star{
+  color: gold;
+}
+
+.fiveStar, .fourStar, .threeStar, .twoStar, .oneStar{
+  background-color: #0e6546;
 }

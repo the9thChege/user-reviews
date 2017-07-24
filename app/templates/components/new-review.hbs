@@ -1,9 +1,10 @@
 {{#if addReview}}
   <div class="reviewForm">
     <form>
+      <!--
       <div class="form-group starRating">
         <label for="rating">Rating</label>
-        {{#x-select value=rating id="rating" }}
+        {{#x-select value=model.status id="rating" }}
           {{#x-option value="5 stars" }}5 stars{{/x-option}}
           {{#x-option value="4 stars" }}4 stars{{/x-option}}
           {{#x-option value="3 stars" }}3 stars{{/x-option}}
@@ -11,13 +12,35 @@
           {{#x-option value="1 star" }}1 star{{/x-option}}
         {{/x-select}}
       </div>
-      <br>
-      <div class="form-group">
-        <label for="author">Your Name</label> {{input value=author id="author"}}
+-->
+      <div class="form-group starRating">
+        <label for="rating"><u>Rating</u></label>
+        <br>
+        <button {{action 'sortedRating5'}} type="button" class="btn btn-success" id="fiveStar">
+          <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span> 5 Stars
+        </button>
+        <button {{action 'sortedRating4'}} type="button" class="btn btn-success" id="fourStar">
+          <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span> 4 Stars
+        </button>
+        <button {{action 'sortedRating3'}} type="button" class="btn btn-success" id="threeStar">
+          <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span> 3 Stars
+        </button>
+        <button {{action 'sortedRating2'}} type="button" class="btn btn-success" id="twoStar">
+          <span class="fa fa-star"></span><span class="fa fa-star"></span> 2 Stars
+        </button>
+        <button {{action 'sortedRating1'}} type="button" class="btn btn-success" id="oneStar">
+          <span class="fa fa-star"></span> 1 Stars
+        </button>
       </div>
       <br>
       <div class="form-group">
-        <label for="content">Review</label> {{textarea value=content id="content"}}
+        <label for="author">Your Name</label>
+        <br> {{input value=author id="author"}}
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="content">Review</label>
+        <br> {{textarea value=content id="content"}}
       </div>
       <br>
       <button {{action 'saveReview' review}}>Post Review</button>
@@ -27,6 +50,9 @@
 
 {{else}}
   <div class="addReviewSection">
-    <button {{action 'toggleDetail'}}>Review This Product</button>
+    <center>
+      <button {{action 'toggleDetail'}}>Review This Product</button>
+    </center>
   </div>
+
 {{/if}}
